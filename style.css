@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    color: #fff;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    background-color: #03045E;
+    background-image: url("plugins/background.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 4, 94, 0.7);
+}
+
+body * {
+    position: relative;
+}
+
+.navbar .nav-link, 
+.navbar .navbar-brand {
+    color: #ffffff;
+}  
+.toast {
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    border-radius: 6px; 
+    z-index: 9999; 
+}
+
+.toast-body {
+    padding: 10px; 
+}
+
+.position-fixed {
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 9999; 
+}
+
+.left-side {
+    font-size: 3.5rem;
+}
+
+.tagline {
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .left-side {
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    .nav-item {
+        margin: 0; 
+    }
+
+    .nav-link {
+        padding: 10px;
+    }
+}
+
+footer {
+    background-color: #f8f9fa;
+}
+
+.footer-text {
+    color: #6c757d;
+} 
+.card-text {
+    font-size: 1rem;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.group-image {
+    height: 250px; 
+    object-fit: cover; 
+    width: 100%; 
+}
+.card {
+    width: 15rem;
+    text-align: center;
+}
+.toast-tag {
+    letter-spacing: 0.8px;
+}
+.gift-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: all 0.3s ease-in-out; /* Add smooth transition */
+}
+
+@keyframes shake {
+    0%, 100% { transform: translate(0); }
+    25% { transform: translate(-5px, 0); }
+    50% { transform: translate(5px, 0); }
+    75% { transform: translate(-5px, 0); }
+}
+
+.shake {
+    animation: shake 0.5s ease;
+}
+video {
+    width: 100%;
+    height: 50vh;
+}
+.custom-icon {
+    color: #FFB700;
+}
