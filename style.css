@@ -120,7 +120,7 @@ footer {
     right: 20px;
     cursor: pointer;
     z-index: 9999;
-    transition: all 0.3s ease-in-out; /* Add smooth transition */
+    transition: all 0.3s ease-in-out; 
 }
 
 @keyframes shake {
@@ -140,3 +140,26 @@ video {
 .custom-icon {
     color: #FFB700;
 }
+.notication-body {
+    text-align: justify;
+    letter-spacing: 0.8px;
+}
+.modal-icon {
+    font-size: 4rem;
+}
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .modal.custom-fade {
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
